@@ -1,0 +1,79 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+.rainbow{
+  user-select: none;
+  font-size: 100px;
+  color: white;
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+              rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
+}
+aside{
+    float: left;
+    font-size: 10px;
+    position: absolute;
+    top: 150px; 
+    left: 15px;
+    color: white;
+    border: 5px;
+    background-image: url(https://data.whicdn.com/images/210503414/original.gif);
+}
+
+
+body { 
+    min-height: 100vh;
+    background-image: url(https://thumbs.gfycat.com/ImaginativeNaiveIrishdraughthorse-size_restricted.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.titulo {
+    font-size: 30px;
+   font-family: 'Press Start 2P', cursive;
+    margin-bottom: 30px;
+    color: #fff;
+    
+}
+
+
+.carousel {
+    min-height: 500px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 350px;
+    height: 350px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}

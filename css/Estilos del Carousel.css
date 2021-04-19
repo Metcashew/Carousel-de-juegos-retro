@@ -32,7 +32,9 @@ aside{
     border: 5px;
     background-image: url(https://data.whicdn.com/images/210503414/original.gif);
 }
-
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+                background-color:cornflowerblue;
+}
 
 body { 
     min-height: 100vh;
